@@ -33,6 +33,7 @@ Datasets
 We used [SOTS-indoor](https://sites.google.com/view/reside-dehaze-datasets/reside-v0), [SOTS-outdoor](https://sites.google.com/view/reside-dehaze-datasets/reside-v0)  and [I-HAZE](https://data.vision.ee.ethz.ch/cvl/ntire18//i-haze/) for testing.  
 
 After downloading the dataset, please use scripts/flist.py to generate the file lists. For example,  to generate the training set file list on the SOTS-indoor testset, you should run:
+
 '''
 python scripts/flist.py --path path_to_SOTS_indoor_hazy_path --output ./datasets/sots_test_hazy_indoor.flist
 python scripts/flist.py --path path_to_SOTS_indoor_clean_path --output ./datasets/sots_test_clean_indoor.flist
@@ -45,6 +46,7 @@ For training, we used [ITS](https://sites.google.com/view/reside-dehaze-datasets
 Getting Started
 --------------------------------------
 To use the pre-trained models, download it from the following link then copy it to corresponding checkpoints folder, like './checkpoints/quick_test'
+
 [Pretrained model](https://drive.google.com/file/d/1KLvPdNpskdVDSz0qEIP_tn-j2MwTcJAV/view?usp=sharing)
 
 ### 0.Quick Testing
