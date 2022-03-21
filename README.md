@@ -34,10 +34,10 @@ We used [SOTS-indoor](https://sites.google.com/view/reside-dehaze-datasets/resid
 
 After downloading the dataset, please use scripts/flist.py to generate the file lists. For example,  to generate the training set file list on the SOTS-indoor testset, you should run:
 
-'''
+```
 python scripts/flist.py --path path_to_SOTS_indoor_hazy_path --output ./datasets/sots_test_hazy_indoor.flist
 python scripts/flist.py --path path_to_SOTS_indoor_clean_path --output ./datasets/sots_test_clean_indoor.flist
-'''
+```
 
 ### 2.Training 
 For training, we used [ITS](https://sites.google.com/view/reside-dehaze-datasets/reside-standard) dataset, you can follow the operations above to generate the training file lists.
@@ -54,16 +54,16 @@ To hold a quick-testing of our dehazing model, download our pre-trained model an
 ```
 python3 test.py --model 1 --checkpoints ./checkpoints/quick_test
 ```
-and check the results in `checkpoints/quick_test/results
+and check the results in 'checkpoints/quick_test/results'
 
 ### 1.Training
 1)Prepair the SOTS-indoor training datasets following the operations in the Dataset part.
 2)Add a config file 'config.yml' in your checkpoints folder. We provide a example checkpoints folder and config file in './checkpoints/train_example' 
 3)Train the model, for example:
 
-'''
+```
 python train.py --model 1 --checkpoints ./checkpoints/train_example
-'''
+```
 
 ### 2. Testing
 1)Prepair the testing datasets following the operations in the Dataset part.
