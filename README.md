@@ -39,6 +39,8 @@ python scripts/flist.py --path path_to_SOTS_indoor_hazy_path --output ./datasets
 python scripts/flist.py --path path_to_SOTS_indoor_clean_path --output ./datasets/sots_test_clean_indoor.flist
 ```
 
+Please notice that the ground truth images of SOTS-indoor have additional white border, you can crop it first.
+
 ### 2.Training 
 For training, we used [ITS](https://sites.google.com/view/reside-dehaze-datasets/reside-standard) dataset, you can follow the operations above to generate the training file lists.
 
