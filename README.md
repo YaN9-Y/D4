@@ -1,6 +1,6 @@
 D4: Self-augmented Unpaired Image Dehazing via Density and Depth Decomposition
 ===============================================
-This is the PyTorch implementation of paper 'Self-augmented Unpaired Image Dehazing via Density and Depth Decomposition', which is accepted by CVPR2022. The paper is coming soon.
+This is the PyTorch implementation of paper 'Self-augmented Unpaired Image Dehazing via Density and Depth Decomposition', which is accepted by CVPR2022. 
 
 Introduction
 ---------------------------------
