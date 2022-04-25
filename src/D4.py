@@ -235,7 +235,7 @@ class D4():
 
                         hazy_input_images = self.pad_input(hazy_images)
 
-                        predicted_results= self.model.forward_h2c(hazy_input_images, use_guided_filter=use_guided_filter)
+                        predicted_results= self.model.forward_h2c(hazy_input_images, use_guided_filter=use_guided_filter)[0]
 
                         predicted_results = self.crop_result(predicted_results, h, w)
 
@@ -243,10 +243,10 @@ class D4():
                         create_dir(path)
                         save_name = os.path.join(path, name)
                         predicted_results = self.postprocess(predicted_results)[0]
-                        predicted_results.save(save_name)
+                        #predicted_results.save(save_name)
+                        imsave(predicted_results,save_name)
 
-
-                        psnr = self.psnr(self.postprocess(predicted_results), self.postprocess(clean_images))
+                        psnr = self.psnr(predicted_results, self.postprocess(clean_images))
                         psnrs.append(psnr.item())
                         print('PSNR_RGB:', psnr)
 
@@ -403,7 +403,9 @@ class D4():
 
     def crop_result(self, result, input_h, input_w, times=32):
         crop_h = crop_w = 0
-
+        print(result.shape)
+        print(input_h)
+        print(input_w)
         if input_h % times != 0:
             crop_h = times - (input_h % times)
 
@@ -411,7 +413,9 @@ class D4():
             crop_w = times - (input_w % times)
 
         if crop_h != 0:
+            print(crop_h)
             result = result[...,:-crop_h, :]
+            
         if crop_w != 0:
             result = result[...,:-crop_w]
         return result
