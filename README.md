@@ -63,6 +63,8 @@ python3 test.py --model 1 --checkpoints ./checkpoints/quick_test
 ```
 and check the results in 'checkpoints/quick_test/results'
 
+If you want to see the depth estimation and haze generation results, change the `TEST_MODE` term from `pair_test` to `clean`, then run the same command.  
+
 ### 1.Training
 1)Prepair the SOTS-indoor training datasets following the operations in the Dataset part.
 2)Add a config file 'config.yml' in your checkpoints folder. We provide a example checkpoints folder and config file in `./checkpoints/train_example` 
@@ -79,5 +81,22 @@ python train.py --model 1 --checkpoints ./checkpoints/train_example
 3)Test the model, for example:
 ```
 python test.py --model 1 --checkpoints ./checkpoints/test_example
+```
+
+
+Limitation
+--------------------------------------
+We found that our model is sensitive to training data. The training may be unstable on images that has a wide variation on depth. 
+
+Citation
+--------------------------------------
+if you find our work useful, please cite:
+```
+@inproceedings{yang2022self,
+  title={Self-augmented Unpaired Image Dehazing via Density and Depth Decomposition},
+  author={Yang, Yang and Wang, Chaoyue and Liu, Risheng and Zhang, Lin and Guo, Xiaojie and Tao, Dacheng},
+  booktitle={CVPR},
+  year={2022}
+}
 ```
 
