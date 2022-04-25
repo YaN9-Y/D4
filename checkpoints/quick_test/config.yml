@@ -7,8 +7,8 @@ TEST_MODE: pair_test     # pair_test : test dehazing performance.  clean: test d
 
 TRAIN_CLEAN_FLIST:
 TRAIN_HAZY_FLIST:
-TEST_HAZY_FLIST: ./datasets/sots_test_hazy_indoor.flist
-TEST_CLEAN_PATH: /home/yangyang/dataset/RESIDE_part_429_indoor/test_gt
+TEST_HAZY_FLIST: ./datasets/quick_test_hazy.flist
+TEST_CLEAN_PATH: ./examples/gt/
 VAL_HAZY_FLIST: 
 VAL_CLEAN_PATH: 
 
