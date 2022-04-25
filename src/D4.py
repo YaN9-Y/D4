@@ -403,9 +403,6 @@ class D4():
 
     def crop_result(self, result, input_h, input_w, times=32):
         crop_h = crop_w = 0
-        print(result.shape)
-        print(input_h)
-        print(input_w)
         if input_h % times != 0:
             crop_h = times - (input_h % times)
 
