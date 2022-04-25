@@ -2,12 +2,13 @@ MODE: 1             # 1: train, 2: test
 MODEL: 1           # no need to alter 
 SEED: 10            # random seed
 GPU: [0]            # list of gpu ids
-TEST_MODE: pair_test     # pair_test : test dehazing performance.  clean: test depth estimation & haze generation
+TEST_MODE: clean     # pair_test : test dehazing performance.  clean: test depth estimation & haze generation
 
 
 TRAIN_CLEAN_FLIST:
 TRAIN_HAZY_FLIST:
 TEST_HAZY_FLIST: ./datasets/quick_test_hazy.flist
+TEST_CLEAN_FLIST: ./datasets/quick_test_clean.flist
 TEST_CLEAN_PATH: ./examples/gt/
 VAL_HAZY_FLIST: 
 VAL_CLEAN_PATH: 
