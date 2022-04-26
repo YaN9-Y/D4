@@ -405,7 +405,7 @@ class MidasNet_small(BaseNetwork):
 
         super(MidasNet_small, self).__init__()
 
-        use_pretrained = False if path else True
+        use_pretrained = False #if path else True
 
         # self.channels_last = channels_last
         self.blocks = blocks
