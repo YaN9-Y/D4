@@ -1,6 +1,6 @@
 D4: Self-augmented Unpaired Image Dehazing via Density and Depth Decomposition
 ===============================================
-This is the PyTorch implementation of paper 'Self-augmented Unpaired Image Dehazing via Density and Depth Decomposition', which is accepted by CVPR2022. 
+This is the PyTorch implementation of the paper 'Self-augmented Unpaired Image Dehazing via Density and Depth Decomposition', which is accepted by CVPR2022. 
 
 Introduction
 ---------------------------------
@@ -32,7 +32,7 @@ Datasets
 ### 1.Testing
 We used [SOTS-indoor](https://sites.google.com/view/reside-dehaze-datasets/reside-v0), [SOTS-outdoor](https://sites.google.com/view/reside-dehaze-datasets/reside-v0)  and [I-HAZE](https://data.vision.ee.ethz.ch/cvl/ntire18//i-haze/) for testing.  
 
-After downloading the dataset, please use scripts/flist.py to generate the file lists. For example,  to generate the training set file list on the SOTS-indoor testset, you should run:
+After downloading the dataset, please use scripts/flist.py to generate the file lists. For example, to generate the training set file list on the SOTS-indoor testset, you should run:
 
 ```
 python scripts/flist.py --path path_to_SOTS_indoor_hazy_path --output ./datasets/sots_test_hazy_indoor.flist
@@ -52,7 +52,7 @@ python scripts/flist.py --path ITS_train_gt_path --output ./datasets/its_train_g
 
 Getting Started
 --------------------------------------
-To use the pre-trained models, download it from the following link then copy it to corresponding checkpoints folder, like `./checkpoints/quick_test`
+To use the pre-trained models, download it from the following link then copy it to the corresponding checkpoints folder, like `./checkpoints/quick_test`
 
 [Pretrained model](https://drive.google.com/file/d/1KLvPdNpskdVDSz0qEIP_tn-j2MwTcJAV/view?usp=sharing)
 
@@ -66,8 +66,8 @@ and check the results in 'checkpoints/quick_test/results'
 If you want to see the depth estimation and haze generation results, change the `TEST_MODE` term from `pair_test` to `clean`, then run the same command.  
 
 ### 1.Training
-1)Prepair the SOTS-indoor training datasets following the operations in the Dataset part.
-2)Add a config file 'config.yml' in your checkpoints folder. We provide a example checkpoints folder and config file in `./checkpoints/train_example` 
+1)Prepare the SOTS-indoor training datasets following the operations in the Dataset part.
+2)Add a config file 'config.yml' in your checkpoints folder. We provide an example checkpoints folder and config file in `./checkpoints/train_example` 
 3)Train the model, for example:
 
 ```
@@ -75,9 +75,9 @@ python train.py --model 1 --checkpoints ./checkpoints/train_example
 ```
 
 ### 2. Testing
-1)Prepair the testing datasets following the operations in the Dataset part.
+1)Prepare the testing datasets following the operations in the Dataset part.
 2)Put the trained weight in the checkpoint folder 
-2)Add a config file 'config.yml' in your checkpoints folder. We provide a example checkpoints folder and config file in `./checkpoints/test_example`
+2)Add a config file 'config.yml' in your checkpoints folder. We provide an example checkpoints folder and config file in `./checkpoints/test_example`
 3)Test the model, for example:
 ```
 python test.py --model 1 --checkpoints ./checkpoints/test_example
@@ -86,7 +86,7 @@ python test.py --model 1 --checkpoints ./checkpoints/test_example
 
 Limitation
 --------------------------------------
-We found that our model is sensitive to training data. The training may be unstable on images that has a wide variation on depth. 
+We found that our model is sensitive to training data. The training may be unstable on images that have a wide variation in depth. 
 
 Citation
 --------------------------------------
@@ -95,7 +95,7 @@ if you find our work useful, please cite:
 @inproceedings{yang2022self,
   title={Self-augmented Unpaired Image Dehazing via Density and Depth Decomposition},
   author={Yang, Yang and Wang, Chaoyue and Liu, Risheng and Zhang, Lin and Guo, Xiaojie and Tao, Dacheng},
-  booktitle={CVPR},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   year={2022}
 }
 ```
