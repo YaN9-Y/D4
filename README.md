@@ -88,6 +88,13 @@ Limitation
 --------------------------------------
 We found that our model is sensitive to training data. The training may be unstable on images that have a wide variation in depth. 
 
+Update
+--------------------------------------
+We notice that in the supplmentary material we upload the wrong version image of the network architecture, the residual convolution part is wrongly illustrated. We put the correct version here to avoid misunderstanding. As mentioned in the supplementary material, the network architecture refers to Monocular relative depth perception with web stereo data supervision by Ke Xian et al.
+
+![image](network_architecture.png)
+
+
 Citation
 --------------------------------------
 if you find our work useful, please cite:
