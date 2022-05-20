@@ -92,7 +92,7 @@ Update
 --------------------------------------
 We notice that in the supplmentary material we have uploaded the wrong version image of the network architecture, where the residual convolution part was wrongly illustrated. We put the correct version here to avoid misunderstanding. As mentioned in the supplementary material, the network architecture refers to Monocular relative depth perception with web stereo data supervision by Ke Xian et al.
 
-![image](network_architecture.png)
+![image](net_architecture.png)
 
 
 Citation
