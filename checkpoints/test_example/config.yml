@@ -3,7 +3,7 @@ MODEL: 1           # no need to alter
 SEED: 10            # random seed
 GPU: [0]            # list of gpu ids
 TEST_MODE: pair_test     # pair_test : test dehazing performance.  clean: test depth estimation & haze generation
-
+DATASET: SOTS-indoor  # SOTS-indoor / others
 
 TRAIN_CLEAN_FLIST: 
 TRAIN_HAZY_FLIST: 
