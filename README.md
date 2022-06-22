@@ -87,9 +87,10 @@ Citation
 if you find our work useful, please cite:
 ```
 @inproceedings{yang2022self,
-  title={Self-augmented Unpaired Image Dehazing via Density and Depth Decomposition},
+  title={Self-Augmented Unpaired Image Dehazing via Density and Depth Decomposition},
   author={Yang, Yang and Wang, Chaoyue and Liu, Risheng and Zhang, Lin and Guo, Xiaojie and Tao, Dacheng},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={2037--2046},
   year={2022}
 }
 ```
