@@ -173,6 +173,7 @@ class HazeRemovalNet(BaseNetwork):
 
 
         t = ((torch.tanh(t) + 1) / 2)
+        t = t.clamp(0.05,0.95)
 
         if use_guided_filter:
             t = self.transmission_estimator.get_refined_transmission(x_0,t)
