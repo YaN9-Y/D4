@@ -54,8 +54,8 @@ class D4():
         self.model.load()
 
 
-    def save(self, save_best=False, psnr=None, iteration=None):
-        self.model.save(save_best,psnr,iteration)
+    def save(self):
+        self.model.save()
 
 
 
