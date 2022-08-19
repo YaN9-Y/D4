@@ -301,7 +301,7 @@ class DepthEstimationNet(BaseNetwork):
 
         features = base_channel_nums
 
-        use_pretrained = False #if os.path.exists(path) else True
+        use_pretrained = False if os.path.exists(path) else True
 
         self.blocks = blocks
         self.backbone = backbone
