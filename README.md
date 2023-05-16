@@ -10,9 +10,7 @@ In this paper, we propose a self-augmented image dehazing framework, termed D4 (
 
 Prerequisites
 ---------------------------------
-* Python 3.7
-* Pytorch 1.7.1
-* NVIDIA GPU + CUDA cuDNN
+* Python 3.7 + Pytorch, please refer environment.yml for detiled requirments.
 
 Datasets
 ---------------------------------
