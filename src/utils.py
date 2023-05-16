@@ -3,7 +3,6 @@ import sys
 import time
 import random
 import numpy as np
-import matplotlib.pyplot as plt
 import torch
 import torch.nn.functional as F
 from cv2 import applyColorMap, COLORMAP_JET, resize
@@ -42,14 +41,6 @@ def stitch_images(inputs, *outputs, img_per_row=2):
             img.paste(im, (xoffset + cat * width, yoffset))
 
     return img
-
-
-def imshow(img, title=''):
-    fig = plt.gcf()
-    fig.canvas.set_window_title(title)
-    plt.axis('off')
-    plt.imshow(img, interpolation='none')
-    plt.show()
 
 
 def imsave(img, path):
