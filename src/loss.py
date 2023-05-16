@@ -5,7 +5,6 @@ import torchvision.models as models
 import torch.autograd as autograd
 from functools import reduce
 from math import exp
-from .utils import rgb2hsv
 from torch.autograd import Variable
 from torch.nn.modules.utils import _triple, _pair, _single
 
